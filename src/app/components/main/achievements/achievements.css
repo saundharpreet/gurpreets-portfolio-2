@@ -1,0 +1,106 @@
+.achievements-section {
+    padding: 50px 30px;
+    padding-bottom: 20px;
+    margin: auto;
+    margin-top: 50px;
+    max-width: 700px;
+}
+
+.headline h1.dark-mode {
+    background-color: #1e1e1e !important;
+}
+
+/* Headline (same as experience section) */
+.headline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headline .line {
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+}
+
+.headline h1 {
+    padding: 20px 40px;
+    font-size: 26px;
+    background: white;
+    border-radius: 50px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-55px);
+}
+
+.achv-block {
+    margin-bottom: 3rem;
+}
+
+.achv-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 0.8rem;
+}
+
+.achv-title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 5px;
+    height: 18px;
+    background: linear-gradient(to bottom, #2563EB, #9fbbf7);
+    border-radius: 2px;
+}
+
+.achv-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    column-count: 2;
+    /* elegant magazine-style flow */
+    column-gap: 2rem;
+}
+
+.achv-list a {
+    color: #2563EB;
+}
+
+.achv-list a:hover {
+    font-weight: bold;
+}
+
+.achv-list li {
+    margin: 0 0 0.8rem 0;
+    padding-left: 1.2rem;
+    position: relative;
+    line-height: 1.6;
+}
+
+.achv-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: radial-gradient(circle at center, #444 0%, #777 70%, #aaa 100%);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile responsive */
+@media (max-width: 700px) {
+    .achv-list {
+        column-count: 1;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .headline h1 {
+        font-size: 16px;
+        transform: translateY(-40px);
+    }
+}

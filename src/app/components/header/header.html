@@ -1,0 +1,60 @@
+<div class="container" [class.no-shadow]="isShrunk" [class.dark-mode]="isDarkMode">
+    <div class="top-bar" [class.sticky]="isShrunk" [class.round]="isRound">
+        <div class="info">
+            <p class="email">saundgurpreet@gmail.com</p>
+            <button class="copy full" (click)="copyEmail()">
+                <img src="{{ isDarkMode ? '/assets/copy-dark.svg' : '/assets/copy.svg' }}" alt="copy">
+                Copy
+            </button>
+            <button class="copy-icon mobile" (click)="copyEmail()">
+                <img src="{{ isDarkMode ? '/assets/copy-dark.svg' : '/assets/copy.svg' }}" alt="copy">
+            </button>
+            <!-- <button class="cv full">
+                <img src="/assets/file_save.svg" alt="file_save">
+                CV
+            </button> -->
+            <!-- <button class="cv-icon mobile">
+                <img src="/assets/file_save.svg" alt="file_save">
+            </button> -->
+        </div>
+        <div class="full">
+            <button class="icon" (click)="darkMode()">
+                <img src="{{ isDarkMode ? '/assets/dark.svg' : '/assets/light.svg' }}" alt="copy">
+            </button>
+            <button (click)="openLink('https://www.linkedin.com/in/gurpreet-kaur12/')">
+                <img src="{{ isDarkMode ? '/assets/linkedin-dark.svg' : '/assets/linkedin-light.svg' }}" alt="copy">
+                LinkedIn
+            </button>
+        </div>
+        <div class="mobile">
+            <button class="icon" (click)="darkMode()">
+                <img src="/assets/light.svg" alt="copy">
+            </button>
+            <button class="icon" (click)="openLink('https://www.linkedin.com/in/gurpreet-kaur12/')">
+                <img src="{{ isDarkMode ? '/assets/linkedin-dark.svg' : '/assets/linkedin-light.svg' }}" alt="copy">
+            </button>
+        </div>
+    </div>
+    <div class="profile">
+        <div class="tag-container">
+            <img src="/assets/profile.jpg" alt="profile" class="profile-picture" [class.dark-mode]="isDarkMode">
+            <p class="tag" [class.dark-mode]="isDarkMode">
+                <span class="dot">
+                    <div></div>
+                </span>
+                Gurpreet Kaur 👋
+            </p>
+        </div>
+        <h1 class="tagline">"Shaping resilient soils for a sustainable future"</h1>
+        <div class="buttons">
+            <button class="black" (click)="openLink('https://cals.cornell.edu/people/gurpreet-kaur')">
+                Cornell Profile
+                <img src="/assets/link.svg" alt="link">
+            </button>
+            <button class="cv" (click)="downloadCV()">
+                <img src="{{ isDarkMode ? '/assets/file-dark.svg' : '/assets/file-light.svg' }}" alt="file_save">
+                CV
+            </button>
+        </div>
+    </div>
+</div>

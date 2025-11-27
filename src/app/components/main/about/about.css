@@ -1,0 +1,53 @@
+.container {
+    padding: 50px 30px;
+    max-width: 700px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.headline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headline .line {
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+}
+
+.headline h1 {
+    padding: 20px 40px;
+    font-size: 24px;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    transform: translateY(-55px);
+}
+
+.headline h1.dark-mode {
+    background-color: #1e1e1e !important;
+}
+
+.about-me h2 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    color: #2563EB;
+}
+
+.about-me p {
+    line-height: 1.7;
+}
+
+.facts {
+    list-style-type: disc;
+    padding-left: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.facts li {
+    margin-bottom: 0.5rem;
+    line-height: 1.7;
+}

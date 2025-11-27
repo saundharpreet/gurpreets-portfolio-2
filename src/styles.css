@@ -1,1 +1,140 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    padding: 15px 30px;
+    text-decoration: none;
+    border: none;
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    transition: all 0.5s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+button img {
+    width: 18px !important;
+    height: 18px !important;
+}
+
+button:hover,
+button:focus {
+    cursor: pointer;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+button:active {
+    box-shadow: none;
+}
+
+button.black {
+    color: #f1f1f1;
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+    border: none;
+    color: black;
+    transition: all 0.5s ease;
+}
+
+a:hover,
+a:focus {
+    cursor: pointer;
+    color: #2563EB;
+}
+
+.dark-mode {
+    background-color: #0f0f0f !important;
+    color: #f3f3f3 !important;
+}
+
+/* Headings inside dark mode */
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6 {
+    color: #ffffff !important;
+}
+
+/* Paragraphs + subtle text */
+.dark-mode p,
+.dark-mode span,
+.dark-mode small,
+.dark-mode label {
+    color: #c2c2c2 !important;
+}
+
+/* Cards */
+.dark-mode .card {
+    background-color: #1a1a1a !important;
+    border: 1px solid #2a2a2a !important;
+    color: #ffffff !important;
+}
+
+/* Inputs */
+.dark-mode input,
+.dark-mode textarea,
+.dark-mode select {
+    background-color: #1b1b1b !important;
+    color: #f3f3f3 !important;
+    border: 1px solid #2a2a2a !important;
+}
+
+.dark-mode input::placeholder,
+.dark-mode textarea::placeholder {
+    color: #888888 !important;
+}
+
+/* Buttons */
+.dark-mode button {
+    background-color: #2b2b2b !important;
+    color: #ffffff !important;
+    border: 1px solid #3a3a3a !important;
+}
+
+.dark-mode button:hover {
+    background-color: #333333 !important;
+}
+
+/* Links */
+.dark-mode a {
+    color: #6ea8ff !important;
+}
+
+.dark-mode a:hover {
+    color: #9ac6ff !important;
+}
+
+/* Borders */
+.dark-mode hr {
+    border-color: #2a2a2a !important;
+}
+
+/* Tables */
+.dark-mode table {
+    color: #f3f3f3 !important;
+    background-color: #1a1a1a !important;
+}
+
+.dark-mode th,
+.dark-mode td {
+    border: 1px solid #2a2a2a !important;
+}

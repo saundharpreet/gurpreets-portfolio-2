@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    padding-bottom: 20px;
+    background-color: #f1f1f1;
+    border-radius: 50px 50px 0 0;
+    font-size: 14px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    transition: all 0.1s ease-in-out;
+}
+
+.container.dark-mode {
+    background-color: #1e1e1e !important;
+    color: #f3f3f3 !important;
+}
+
+.container p {
+    text-align: center;
+}
