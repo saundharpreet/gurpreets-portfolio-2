@@ -28,7 +28,7 @@
         </div>
         <div class="mobile">
             <button class="icon" (click)="darkMode()">
-                <img src="/assets/light.svg" alt="copy">
+                <img src="{{ isDarkMode ? '/assets/dark.svg' : '/assets/light.svg' }}" alt="copy">
             </button>
             <button class="icon" (click)="openLink('https://www.linkedin.com/in/gurpreet-kaur12/')">
                 <img src="{{ isDarkMode ? '/assets/linkedin-dark.svg' : '/assets/linkedin-light.svg' }}" alt="copy">
@@ -47,7 +47,8 @@
         </div>
         <h1 class="tagline">"Shaping resilient soils for a sustainable future"</h1>
         <div class="buttons">
-            <button class="black" (click)="openLink('https://cals.cornell.edu/people/gurpreet-kaur')">
+            <button class="black" [class.dark-mode]="isDarkMode"
+                (click)="openLink('https://cals.cornell.edu/people/gurpreet-kaur')">
                 Cornell Profile
                 <img src="/assets/link.svg" alt="link">
             </button>

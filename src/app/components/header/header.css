@@ -153,11 +153,14 @@ button.icon {
 
 @media only screen and (max-width: 800px) {
     .top-bar {
-        width: calc(100vw - 60px);
+        width: calc(100vw - 40px);
+        gap: 7px;
+            padding: 20px 20px;
     }
 
     .mobile {
         display: flex !important;
+        gap: 7px !important;
     }
 
     .full {
